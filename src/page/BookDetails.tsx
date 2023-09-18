@@ -49,13 +49,13 @@ const BookDetails: React.FC = () => {
         <span className="ml-[10px]">Go Back</span>
       </button>
 
-      <div className="flex p-[15px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-[15px]">
         <img
-          className="w-[400px] max-w-[400px] rounded"
+          className="rounded mb-3"
           src={volumeInfo?.imageLinks?.large}
           alt="cover img"
         />
-        <div className="ml-5">
+        <div className="ml-0 md:ml-5">
           <span className="text-2xl text-[#1a0dab]">{volumeInfo?.title}</span>
           {volumeInfo?.subtitle && (
             <span className="text-sm text-[#4d5156]">
